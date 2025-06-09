@@ -89,3 +89,17 @@ python3 train.py
 ```
 python3 predict.py
 ```
+
+# 模型转换
+```bash
+pip install ctranslate2 transformers
+ct2-transformers-converter --model /mnt/d/WSL/asr_large_model/whisper-multitask-finetuning/merged_model --output_dir /mnt/d/WSL/asr_large_model/whisper-multitask-finetuning/ctranslate_model --quantization float16
+```
+
+# 成品展示
+- 加载app文件夹
+- 配置相关环境（根据VSCode提示配置即可）
+```bash
+python3 app.py
+```
+- 打开网站
